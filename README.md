@@ -1,5 +1,5 @@
 # 🏢 Doc-Agent Architecture
-> 基于 Markdown 文档深度解析的企业级问答 Agent 架构演进实录
+> 基于 Markdown 文档深度解析的企业级问答 Agent 架构演进
 
 
 ## 🗺️ 技术矩阵 (Architecture Navigation)
