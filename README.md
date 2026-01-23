@@ -19,5 +19,19 @@
 ---
 
 ## 📂 快速访问核心实现 (Source Code)
-* `src/memory_manager.py`: 实现动态 Token 权重裁剪算法。
-* `src/md_parser.py`: 基于标题路径（Breadcrumb）的结构化切片逻辑。
+为了让 GitHub README 更加紧凑、专业，建议将**源码路径**与**核心特性**合并，采用表格（Table）或列表（List）结合加粗关键词的形式。这样读者可以一眼看到“功能”与“代码”的对应关系，无需反复滚动页面。
+
+以下是为您优化后的紧凑版：
+
+---
+
+## 🛠️ 核心架构与实现 (Core Architecture)
+
+我们将复杂的 Agent 逻辑拆解为四个高度解耦的核心模块，确保在有限的上下文内实现最高效的推理。
+
+| 核心模块 | 技术特性 (Key Features) | 源码位置 (Source) |
+| --- | --- | --- |
+| **ReAct 引擎** | **推理闭环**：Thought-Action-Observation 循环，支持工具自动解析与流式终止判断。 | `react_core.py` |
+| **动态 Memory** | **Token 精算**：实时窗口管理，采用 **System 锚点保护** 与 **远场语义压缩** 策略。 | `memory_core.py` |
+| **结构化分块** | **语法感知**：基于标题层级的智能切分，支持 **面包屑路径继承** 与代码块边界保护。 | `chunker_core.py` |
+| **任务执行器** | **安全调度**：整合简单规划器（关键词匹配），内置工具权限检查与 LLM 容错重试。 | `executor_core.py` |
